@@ -1,5 +1,5 @@
 FROM devopsedu/webapp
-MAINTAINER Dan Pupius <dan@pupi.us>
+
 
 # Install apache, PHP, and supplimentary programs. openssh-server, curl, and lynx-cur are for debugging the container.
 RUN apt-get update && apt-get -y upgrade && DEBIAN_FRONTEND=noninteractive apt-get -y install \
