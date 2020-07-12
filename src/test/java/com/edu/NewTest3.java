@@ -26,7 +26,7 @@ public class NewTest3 {
 	    options.addArguments("--headless", "--disable-gpu", "--window-size=1920,1200","--ignore-certificate-errors", "--silent", "--no-sandbox", "--disable-dev-shm-usage"); //add
 	    System.setProperty("webdriver.chrome.driver", "chromedriver");
 	    driver = new ChromeDriver(options);//add options
-		driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
+		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 		driver.get("http://192.168.42.10:8081");
   }
 	
