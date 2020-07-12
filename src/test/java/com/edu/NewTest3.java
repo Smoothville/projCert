@@ -23,7 +23,7 @@ public class NewTest3 {
  
   @BeforeMethod
   public void beforeMethod() {
-	    options.addArguments("--headless", "--disable-gpu", "--window-size=1920,1200","--ignore-certificate-errors", "--silent"); //add
+	    options.addArguments("--headless", "--disable-gpu", "--window-size=1920,1200","--ignore-certificate-errors", "--silent", "--remote-debugging-port=9222"); //add
 	    System.setProperty("webdriver.chrome.driver", "chromedriver");
 	    driver = new ChromeDriver(options);//add options
 		driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
